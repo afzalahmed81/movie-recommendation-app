@@ -23,7 +23,7 @@
     
       <div class="movie">
          <hr>
-        <h3>${movie.title}</h3>
+        <h3>Movie: ${movie.title}</h3>
         <p><strong>Genre:</strong> ${movie.genres}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
         <p><strong>Release Year:</strong> ${movie.release_date}</p>
