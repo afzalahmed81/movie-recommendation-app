@@ -20,6 +20,9 @@ body {
     margin: 0;
     color:black;
   }
+  #heading {
+    text-align: center;
+  }
   .form-group {
     display: flex;
     justify-content: center;
@@ -36,6 +39,12 @@ body {
   }
   #movie-list {
     color: black;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    margin:10px 470px;
+    padding: 10px;
+    width: fit-content;
+    background-color: dimgrey;
   }
   /* #rating {
     width: 200px;

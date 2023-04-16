@@ -18,8 +18,11 @@
   
     // Function to generate movie HTML
   function generateMovieHTML(movie) {
+    
     return `
+    
       <div class="movie">
+         <hr>
         <h3>${movie.title}</h3>
         <p><strong>Genre:</strong> ${movie.genres}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
@@ -30,10 +33,11 @@
   
    // Function to filter movies based on user preferences
    function filterMovies(movies, genre, vote_average, release_date) {
+    console.log('from filterMovies',genre,vote_average,release_date);
     return movies.filter(movie => {
-      if (genre && !Array.isArray(movie.genres) || !movie.genres.join().toLowerCase().includes(genre)) {
-        return false;
-      }
+      // if (genre && !Array.isArray(movie.genres) || !movie.genres.join(" ").toLowerCase().includes(genre)) {
+      //   return false;
+      // }
       if (vote_average && movie.vote_average < vote_average) {
         return false;
       }
@@ -51,7 +55,7 @@
     const genre = genreSelect.value;
     const vote_average = ratingSelect.value;
     const release_date = yearSelect.value;
-    //const year = release_date.substring(0,4);
+    console.log('check input',genre,vote_average,release_date);
   
     const filteredMovies = filterMovies(movies, genre, vote_average, release_date);
     console.log('filtered',filteredMovies);
