@@ -23,7 +23,7 @@
     
       <div class="movie">
          <hr>
-        <h3>Movie: ${movie.title}</h3>
+        <h3>Movie Name : ${movie.title}</h3>
         <p><strong>Genre:</strong> ${movie.genres}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
         <p><strong>Release Year:</strong> ${movie.release_date}</p>
@@ -35,9 +35,9 @@
    function filterMovies(movies, genre, vote_average, release_date) {
     console.log('from filterMovies',genre,vote_average,release_date);
     return movies.filter(movie => {
-      // if (genre && !Array.isArray(movie.genres) || !movie.genres.join(" ").toLowerCase().includes(genre)) {
-      //   return false;
-      // }
+      if (genre && !Array.isArray(movie.genres) || !movie.genres.join(" ").toLowerCase().includes(genre)) {
+        return false;
+      }
       if (vote_average && movie.vote_average < vote_average) {
         return false;
       }
@@ -52,7 +52,7 @@
   function handleSubmit(event)  {
     event.preventDefault();
   
-    const genre = genreSelect.value;
+    const genre = genreSelect.value.toLowerCase();
     const vote_average = ratingSelect.value;
     const release_date = yearSelect.value;
     console.log('check input',genre,vote_average,release_date);

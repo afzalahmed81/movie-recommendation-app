@@ -18,7 +18,7 @@ body {
   }
   
   header h1 {
-    margin: 0;
+    margin: 10px;
     color:black;
   }
   #heading {
@@ -30,11 +30,13 @@ body {
     flex-wrap: wrap;
     gap: 2px;
     width: 500px;
+    height: 60px;
     border: 1px solid green;
-    padding: 10px;
+    padding: 15px 5px;
     border-radius: 15px;
     background-color:cadetblue;
     margin-right: 100px;
+    
        
     
   }
