@@ -10,7 +10,7 @@ body {
     /* position: fixed; */
     width: 98%;
     top: 0;
-    height: 70px;
+    height: 100px;
     padding: 30px;
     background-color:darkgray;
     display: flex;
@@ -29,10 +29,10 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2px;
-    width: 500px;
-    height: 60px;
+    width: 600px;
+    height: 80px;
     border: 1px solid green;
-    padding: 15px 5px;
+    padding: 20px 5px 10px 5px;
     border-radius: 15px;
     background-color:cadetblue;
     margin-right: 100px;
@@ -50,13 +50,21 @@ body {
     background-color:rgb(187, 187, 117);
     text-align: center;
   }
-  /* #rating {
+   /* #rating {
     width: 200px;
-  }
-  #btn {
+  } */
+  #submit-button {
     text-align:center;
     margin-top: 10px;
-  } */
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 120px;
+  } 
   /* #recommend {
     padding: 10px;
     border-radius: 5px;
